@@ -1,0 +1,358 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    
+
+}
+.navbar{
+    background-color: white;
+    width: 100%;
+    top: 0;
+    padding-bottom: 15px;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+
+.side-navigation{
+    z-index: 2;
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    width: 260px;
+    height: 100%;
+    background-color: rgb(255, 173, 51);
+    right: 0px;
+    
+    transition: 0.800s ease;
+
+}
+.side-nav{
+    background-color: rgb(255, 173, 51);
+}
+
+.side-navigation > .side-nav{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.contact-nav{
+    padding-top: 30px ;
+    background-color: rgb(255, 153, 0);
+    padding-left: 1em;
+}
+
+.nav-item{
+    display: flex;
+}
+.nav-item > .nav-link{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 1em;
+    flex: 1;
+}
+.toggle-collapse{
+    float: left;
+    margin-left: -3.3em;
+    margin-top: 1.5em;
+    content: "";
+    outline: inherit;
+    border: 0px;
+    background: transparent;
+}
+
+.contact-nav > a{
+    padding: .5em;
+    color: whitesmoke;
+}
+
+.toggle-icon,
+.toggle-icon::before,
+.toggle-icon::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: fixed;
+    background-color: rgb(255, 51, 0);
+    border-radius: 2em;
+    border: 1px solid rgb(255, 51, 0);
+    cursor: pointer;
+    transition: 0.800s ease;
+    margin-top: 1em;
+}
+
+.toggle-icon::before{
+    position: absolute;
+    left: -1px;
+    margin-top: -0.8em;
+}
+.toggle-icon::after{
+    position: absolute;
+    left: -1px;
+    margin-top: 0.6em;
+    width: 20px;
+
+}
+.toggle-icon{
+    width: 15px;
+    margin-left: -1em;
+    margin-top: 2em;
+}
+
+.show .toggle-icon::after{
+    width: 30px;
+}
+
+.show .toggle-icon{
+    width: 30px;
+}
+
+.nav-item > .nav-link i{
+    padding: .5em;
+}
+
+
+.intro{
+    position: relative; 
+    margin-top: 5%;
+    
+    padding-bottom: 10px;
+    width: 100%;
+    padding-left: 50px;
+    
+    background-image: url('/Images/city2.jpg');
+    background-size: cover;
+}
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(131, 122, 122, 0.25);
+    opacity: 0.5;
+}
+
+
+
+.intro > h1{
+    padding-top: 5%;
+    font-size: 100px;
+    
+    opacity: none;
+    font-weight: bold;
+
+}
+
+.intro > h2{
+    color: rgb(255, 51, 0);
+    font-size: 100px;
+    
+    opacity: none;
+    font-weight: bold;
+
+}
+
+.intro > p{
+    font-size: 30px;
+    font-weight: bold;
+}
+.intro > h3{
+    
+    font-weight: bold;
+}
+.intro >button{
+    margin-top: 20px;
+    padding: .5em ;
+    font-size: 1.5em;
+    background-color:  rgb(255, 51, 0);
+}
+
+.info{
+    padding-top: 80px;
+    text-align: center;
+}
+
+.info > p{
+    font-size: 20px;
+}
+.info >p >a{
+    color: black;
+    text-decoration: underline;
+}
+
+
+.offerings{
+    text-align:center ;
+    background-color: rgb(235, 235, 224);
+    width: 100%;
+    padding-bottom: 20px;
+}
+.offerings > h1{
+    font-weight: bold;
+    font-size: 30px;
+    color:  rgb(255, 51, 0);
+}
+.offerings > p{
+    font-size: 20px;
+}
+
+.offerings > .offerings-container{
+    display: grid;
+    justify-content: center;
+}
+
+.first-row{
+    margin-bottom: 5%;
+}
+.offerings > .offerings-container > .first-row> .card >.card-body > h5{
+    font-weight: bold;
+    font-size: 20px;
+}
+.offerings > .offerings-container > .second-row> .card >.card-body > h5{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.offerings > .offerings-container > .first-row > .card >.card-body > p{
+    
+    font-size: 15px;
+}
+.offerings > .offerings-container > .second-row > .card >.card-body > p{
+    
+    font-size: 15px;
+}
+
+.card-body{
+    border-style: none;
+    box-shadow: none;
+}
+.capabilities{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    
+}
+.capabilities > h1{
+    font-weight: bold;
+    font-size: 30px;
+    color:  rgb(255, 51, 0);
+}
+.capabilities > p{
+    font-size: 20px;
+}
+.capabilities > p >a{
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+.clients{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(235, 235, 224);
+}
+.clients > h1{
+    font-weight: bold;
+    font-size: 30px;
+    color:  rgb(255, 51, 0);
+}
+.clients > p{
+    font-size: 20px;
+}
+.clients > p >a{
+    font-size: 20px;
+    color: black;
+    text-decoration: underline;
+}
+
+.testimonial{
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.testimonial > h1{
+    font-weight: bold;
+    font-size: 30px;
+    color:  rgb(255, 51, 0);
+
+}
+
+.test-card > h5{
+    font-weight: bold;
+    font-size: 30px;
+}
+.test-card > p{
+    font-size: 20px;
+}
+
+.values{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.values > h1{
+    text-align: center;
+
+    font-weight: bold;
+    font-size: 30px;
+    color:  rgb(255, 51, 0);
+}
+.values > p{
+    font-size: 20px;
+    text-align: center;
+
+}
+.v-text{
+    font-size: 15px;
+}
+
+
+.social{
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-image: url("/Images/social.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.social >h1{
+    font-size: 32px;
+    font-weight: bold;
+}
+.social >ul{
+    font-size: 20px;
+    padding-top: 20px;
+    
+}
+.social-btn{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.social-btn > .btn-1 , .btn-2{
+    padding: 5px;
+    font-size: 25px;
+    margin-right: 10px ;
+    color: white;
+    font-weight: bold;
+    padding-left: 40px;
+    padding-right: 40px;
+}
