@@ -5,7 +5,7 @@ body{
 
 }
 .navbar{
-    background-color: whitesmoke;
+    background-color: yellow;
     width: 100%;
     top: 0;
     padding-bottom: 15px;
@@ -48,7 +48,7 @@ body{
 }
 .nav-item > .nav-link{
     text-decoration: none;
-    color: whitesmoke;
+    color: orange;
     font-size: 20px;
     padding: 1em;
     flex: 1;
