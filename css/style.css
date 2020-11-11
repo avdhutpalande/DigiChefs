@@ -8,7 +8,7 @@ body{
     background-color: green;
     width: 100%;
     top: 0;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     position: fixed;
     z-index: 1;
     
@@ -29,7 +29,7 @@ body{
 
 }
 .side-nav{
-    background-color: rgb(255, 173, 51);
+    background-color: rgb(255, 173, 54);
 }
 
 .side-navigation > .side-nav{
